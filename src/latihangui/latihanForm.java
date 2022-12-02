@@ -110,11 +110,13 @@ public class latihanForm extends javax.swing.JFrame {
         user = userName.getText().toLowerCase();
         pass = userPass.getText();
         if ( "kamachi".equals(user) && "kamachi".equals(pass)){
-            JOptionPane.showMessageDialog(rootPane, "Login Berhasil");
+            JOptionPane.showMessageDialog(rootPane, "Admin Berhasil Login!");
             new kalkulatorFirst().setVisible(true);
             this.setVisible(false);
         }else {
-            JOptionPane.showMessageDialog(rootPane, "Penyusup ANDA!");
+            JOptionPane.showMessageDialog(rootPane, "Login berhasil!");
+            new indexUserForm().setVisible(true);
+            this.setVisible(false);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
